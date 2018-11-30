@@ -1,4 +1,4 @@
-# Concurrent RDBMS Processing Demo.
+# Concurrent RDBMS Processing Demo
 
 
 ## Concurrency
