@@ -1,0 +1,30 @@
+spring:
+  flyway:
+    locations: classpath:db/migration
+  datasource:
+    url: jdbc:postgresql://192.168.99.100:5432/test
+    password: test
+    username: test
+    driver-class-name: org.postgresql.Driver
+
+processing:
+  thread:
+    count: 5
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 13
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: shutdown
+  endpoint:
+    shutdown:
+      enabled: true
+    info:
+      enabled: true
